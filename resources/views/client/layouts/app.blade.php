@@ -58,12 +58,35 @@
     </div> --}}
     <div class="loader"></div>
     <!-- loader-END -->
+    <!-- Topbar Start -->
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 50px;">
+                <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>{{ $setting['address'] }}</small>
+                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>{{ $setting['phone'] }}</small>
+                <small class="text-light"><i class="fa fa-envelope-open me-2"></i>{{ $setting['email'] }}</small>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center" style="height: 50px;">
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-youtube fw-normal"></i></a>
+                <!-- Icon Pengaturan untuk login admin-->
+                <a class="btn btn-md rounded-circle" href="{{ url('/admin/login') }}"><i class="bi bi-gear"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
     <!-- Wrapper-start -->
     <main class="main-content">
 
         <div class="position-relative">
             <!-- Nav-Start -->
-            <nav class="nav navbar navbar-expand-xl navbar-light iq-navbar header-hover-menu">
+            <nav class="nav navbar navbar-expand-xl navbar-light iq-navbar header-hover-menu" style="border-radius: 15px;">
                 <div class="container-fluid navbar-inner">
                     <div class="d-flex align-items-center justify-content-between w-100 landing-header">
                         <a href="{{ url('/beranda') }}" class="navbar-brand m-0 d-xl-flex d-none">
