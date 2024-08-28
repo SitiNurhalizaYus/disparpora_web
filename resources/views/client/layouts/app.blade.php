@@ -174,7 +174,7 @@
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li><a class="dropdown-item" href="{{ url('/publikasi/') }}">Berita</a></li>
                                                 <li><a class="dropdown-item" href="{{ url('/publikasi/') }}">Artikel</a></li>
-                                                <li><a class="dropdown-item" href="{{ url('/publikasi/') }}">Dokumen Publik</a></li>
+                                                <li><a class="dropdown-item" href="{{ route('client.document.index') }}">Dokumen Publik</a></li>
                                                 <li><a class="dropdown-item" href="{{ url('/publikasi/') }}">Galeri</a></li>
                                                 <li><a class="dropdown-item" href="{{ url('/publikasi') }}">Agenda</a></li>
                                             </ul>
