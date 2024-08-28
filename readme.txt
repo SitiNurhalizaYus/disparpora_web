@@ -14,6 +14,6 @@ ketik url localhost:8000
 
 # default user
 level: admin
-email: admin@gmail.com
-pass: password
+username: admin
+pass: admin
 

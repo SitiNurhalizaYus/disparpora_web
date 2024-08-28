@@ -111,8 +111,9 @@ class UploadController extends Controller
             $size = $file->getSize();
 
             setlocale(LC_TIME, 'IND');
-            $date_format = Carbon::now()->format('Ymd_His');
-            $filename_new = $date_format . '-' . str_replace(' ', '_', $fileName) . '.' . $extension;
+            // $date_format = Carbon::now()->format('Ymd_His');
+            // $filename_new = $date_format . '-' . str_replace(' ', '_', $fileName) . '.' . $extension;
+            $filename_new = $fileName . '.' . $extension;
 
             $filePath = 'uploads/xxx/' . $filename_new;
 

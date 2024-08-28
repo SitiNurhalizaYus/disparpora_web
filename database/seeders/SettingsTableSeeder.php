@@ -16,7 +16,7 @@ class SettingsTableSeeder extends Seeder
     {
         Setting::factory()->create([
             'key' => 'name',
-            'value' => 'DISPARPORA Sijunjung',
+            'value' => 'DISPARPORA',
             'type' => 'text',
             'notes' => 'Nama instansi Dinas Pariwisata Pemuda dan Olahraga',
             'is_active' => true,
