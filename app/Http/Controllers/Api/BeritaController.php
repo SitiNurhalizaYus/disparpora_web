@@ -126,7 +126,6 @@ class BeritaController extends Controller
             'slug' => 'required|unique:contents,slug',
             'content' => 'required',
             'category_id' => 'required',
-            'arsip_id' => 'required',
         ]);
 
         // Menambahkan tipe sebagai 'berita'

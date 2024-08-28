@@ -17,7 +17,7 @@ use App\Http\Controllers\Api\UploadController;
 Route::middleware([\App\Http\Middleware\AutoCreateLogs::class])->group(function () {
     Route::get('/', [App\Http\Controllers\Client\BerandaController::class, 'index']);
     Route::get('/beranda', [App\Http\Controllers\Client\BerandaController::class, 'index']);
-    
+
     Route::get('/profil{slug}', [App\Http\Controllers\Client\ProfilController::class, 'detail']);
 
     Route::get('/berita', [App\Http\Controllers\Client\BeritaController::class, 'index']);

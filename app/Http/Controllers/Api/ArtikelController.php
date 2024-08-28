@@ -153,6 +153,7 @@ class ArtikelController extends Controller
             'slug' => 'required|unique:contents,slug,' . $id_content,
             'content' => 'required',
             'category_id' => 'required',
+            'arsip_id' => 'required',
         ]);
 
         // Mengupdate data yang ada
